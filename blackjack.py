@@ -1,10 +1,6 @@
-from os import system
 import random
 from art import logo
-
-def clearConsole():
-    command = 'cls'
-    
+   
 def deal_card():
   """Returns a random card from the deck."""
   cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -86,5 +82,4 @@ def play_game():
 
 #Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-  clearConsole()
   play_game()
